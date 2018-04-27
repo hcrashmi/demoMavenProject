@@ -15,6 +15,7 @@ public class LoginTest
 	System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
 	WebDriver driver=new FirefoxDriver();
 	driver.get("http://opensource.demo.orangehrmlive.com/");
-	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);		
+	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);	
+	driver.quit();
 	}
 }
